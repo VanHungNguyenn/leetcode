@@ -9,7 +9,9 @@ const reverseString = (str) => {
 
 const isPalindrome = (x) => {
 	const strX = x.toString()
+	console.log(strX)
 	const strXReversed = reverseString(strX)
+	console.log(strXReversed)
 
 	if (strXReversed === strX) {
 		return true
@@ -19,3 +21,4 @@ const isPalindrome = (x) => {
 }
 
 console.log(isPalindrome(12321))
+console.log(isPalindrome(1234567))
