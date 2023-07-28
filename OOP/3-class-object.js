@@ -49,3 +49,30 @@ const pride = {
 }
 
 mockingbird.describe.call(pride)
+
+function Cat(name) {
+	this.lives = 9
+	this.name = name
+
+	this.sayName = function () {
+		console.log(`Meow! My name is ${this.name}`)
+	}
+}
+
+const capitals = {
+	California: 'Sacramento',
+	Washington: 'Olympia',
+	Oregon: 'Salem',
+	Texas: 'Austin',
+}
+
+console.log(Object.getPrototypeOf(capitals))
+
+function GuineaPig(name) {
+	this.name = name
+	this.isCute = true
+}
+
+const waffle = new GuineaPig('Waffle')
+
+console.log(waffle.__proto__)
