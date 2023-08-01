@@ -1,19 +1,23 @@
-interface User1 {
-	name: string
-	age: number
+// extends interfaces
+interface Shape {
+	width: number
+	height: number
 }
 
-const user1: User1 = {
-	name: 'John',
-	age: 42,
+interface Square extends Shape {
+	sideLength: number
 }
 
-type Person1 = {
-	name: string
-	age: number
+let square: Square = {
+	width: 10,
+	height: 10,
+	sideLength: 10,
 }
 
-const person1: Person1 = {
-	name: 'Terry',
-	age: 33,
+interface Person {
+	firstName: string
+	lastName: string
+	age?: number
+
+	getFullName(): string
 }

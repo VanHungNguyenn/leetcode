@@ -20,15 +20,6 @@ function noop() {
  * ----------------
  * interface, class, enum, arrays, tuples
  */
-interface Person {
-	name: string
-	age: number
-	isMale: boolean
-}
-
-function greetPerson(person: Person) {
-	return `Hello ${person.name} from ${person.age} ${person.isMale}.`
-}
 
 class Car {
 	make: string
