@@ -21,3 +21,19 @@ interface Person {
 
 	getFullName(): string
 }
+
+// Hybrid Types
+type SringOrNumber = string | number
+
+type Education = {
+	degree: string
+	school: string
+	year: number
+}
+
+type User2 = {
+	name: string
+	age: number
+	email: string
+	education: Education
+}
