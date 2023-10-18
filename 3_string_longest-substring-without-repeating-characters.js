@@ -3,7 +3,7 @@
  * @return {number}
  */
 
-const lengthOfLongestSubstring = (s) => {
+const lengthOfLongestSubString = (s) => {
 	let max = 0
 	let start = 0
 	let end = 0
@@ -13,7 +13,6 @@ const lengthOfLongestSubstring = (s) => {
 	while (end < s.length) {
 		if (map.has(s[end])) {
 			start = Math.max(map.get(s[end]) + 1, start)
-			map.delete(s[end])
 		}
 
 		map.set(s[end], end)
@@ -24,4 +23,4 @@ const lengthOfLongestSubstring = (s) => {
 	return max
 }
 
-console.log(lengthOfLongestSubstring('abcab'))
+console.log(lengthOfLongestSubString('abcabcbb'))

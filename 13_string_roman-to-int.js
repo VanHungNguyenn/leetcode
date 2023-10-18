@@ -9,9 +9,11 @@ const romanToInt = (s) => {
 	for (let i = 0; i < s.length - 1; i++) {
 		console.log(s[i], s[i + 1])
 
-		romanTransIntList[s[i]] < romanTransIntList[s[i + 1]]
-			? (sum -= romanTransIntList[s[i]])
-			: (sum += romanTransIntList[s[i]])
+		if (romanTransIntList[s[i]] < romanTransIntList[s[i + 1]]) {
+			sum -= romanTransIntList[s[i]]
+		} else {
+			sum += romanTransIntList[s[i]]
+		}
 	}
 
 	return sum + romanTransIntList[s[s.length - 1]]
