@@ -22,7 +22,7 @@ const longestPalindrome = (s) => {
 		}
 	}
 
-	return flag > 0 ? result + 1 : result
+	return hasOdd > 0 ? result + 1 : result
 }
 
 const longestPalindromeOptimization = (s) => {
