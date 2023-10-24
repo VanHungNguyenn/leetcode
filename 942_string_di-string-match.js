@@ -16,8 +16,8 @@ const diStringMatch = (s) => {
 		}
 	}
 
-	console.log(array)
-	return [...result + ...array]
+	result.push(array[0])
+	return result
 }
 
 console.log(diStringMatch('IDID'))
