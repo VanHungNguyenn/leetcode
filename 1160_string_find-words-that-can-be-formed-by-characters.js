@@ -38,7 +38,7 @@ const countCharacters = (words, chars) => {
 	return result
 }
 
-var countCharacters = function (words, chars) {
+const countCharactersOptimization = function (words, chars) {
 	const charsCount = new Array(26).fill(0)
 	for (const char of chars) {
 		charsCount[char.charCodeAt(0) - 'a'.charCodeAt(0)]++
