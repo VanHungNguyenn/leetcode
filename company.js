@@ -11,3 +11,5 @@ fetchData((result) => {
 })
 
 console.log('hahaha')
+
+console.log('abcde'.slice(0, 1) + 'abcde'.slice(3))
