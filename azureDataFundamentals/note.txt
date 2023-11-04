@@ -6,3 +6,22 @@ Characteristics of relational databases:
 
 SQL : Structured Query Language
 Microsoft SQL Server, MySQL, PostgreSQL, MariaDB and Oracle
+
+Some popular SQL:
+- Transact-SQL
+- pgSQL
+- PL/SQL
+
+SELECT OrderDate, COUNT(OrderID) AS Orders
+FROM Sales.SalesOrder
+WHERE Status = 'Shipped'
+GROUP BY OrderDate
+HAVING COUNT(OrderID) > 1
+ORDER BY OrderDate DESC;
+
+1. The FROM clause is evaluated first
+2. WHERE
+3 GROUP BY
+4. HAVING
+5. SELECT 
+6. ORDER BY
