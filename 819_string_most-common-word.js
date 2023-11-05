@@ -16,8 +16,6 @@ const mostcommonWord = (paragraph, banned) => {
 		charCount[element] = (charCount[element] || 0) + 1
 	}
 
-	console.log(charCount)
-
 	return Object.keys(charCount).reduce((a, b) =>
 		charCount[a] > charCount[b] ? a : b
 	)
