@@ -18,3 +18,5 @@ const numbers = [1, 2, 3, 4, 5]
 const result = numbers.map((number) => number * 2)
 
 console.log(result)
+
+console.log('abcde'.slice(0, 1) + 'abcde'.slice(3))

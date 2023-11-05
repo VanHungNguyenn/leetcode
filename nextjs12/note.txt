@@ -1,0 +1,11 @@
+Pre - rendering
+- SSG : Static Site Generation : build
+- SSR : Server Site rendering : send request to server
+CSR : Client Site rendering : Static Generation + fetch data on client-side
+ISR : Incremental Static Regeneration
+
+1. Static : uses no initial props
+2. SSG : automatically generated as static HTML + JSON (uses getStaticProps)
+3. ISR : uses revalidate in getStaticProps
+4. SSG + CSR: useEffect
+5. SSR : getServerSideProps
