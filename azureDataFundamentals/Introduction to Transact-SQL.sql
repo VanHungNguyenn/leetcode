@@ -56,6 +56,34 @@
 --     END AS ShippingStatus
 -- FROM SalesLT.SalesOrderHeader
 
-SELECT ProductID, Name, ListPrice
-FROM SalesLT.Product
-ORDER BY ListPrice ASC, ProductID DESC;
+-- SELECT ProductID, Name, ListPrice
+-- FROM SalesLT.Product
+-- ORDER BY ListPrice ASC, ProductID DESC;
+
+-- SELECT TOP 10 Name, ListPrice
+-- FROM SalesLT.Product
+-- ORDER BY ListPrice DESC;
+
+-- SELECT TOP 10 WITH TIES Name, ListPrice
+-- FROM SalesLT.Product
+-- ORDER BY ListPrice DESC;
+
+-- SELECT TOP 10 PERCENT Name, ListPrice
+-- FROM SalesLT.Product
+-- ORDER BY ListPrice DESC;
+
+-- SELECT ProductID, ProductName, ListPrice
+-- FROM SalesLT.Product
+-- ORDER BY ListPrice DESC 
+-- OFFSET 0 ROWS 
+-- FETCH NEXT 10 ROWS ONLY;
+
+-- SELECT DISTINCT City, CountryRegion
+-- FROM SalesLT.Supplier
+-- ORDER BY CountryRegion, City;
+
+-- WHERE
+-- SELECT ProductID AS Category, Name 
+-- FROM SalesLT.Product
+-- WHERE ProductID < 800
+
