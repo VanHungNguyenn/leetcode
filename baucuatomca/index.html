@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.dice-container {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				margin-bottom: 1rem;
+			}
+
+			.dice {
+				width: 100px;
+				height: 100px;
+				background-color: #eee;
+				border-radius: 10px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 50px;
+			}
+
+			button {
+				font-size: 30px;
+				padding: 10px 20px;
+				border-radius: 10px;
+				border: none;
+				background-color: #eee;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="dice-container">
+			<div class="dice"></div>
+			<div class="dice"></div>
+			<div class="dice"></div>
+		</div>
+		<button>Roll</button>
+	</body>
+	<script>
+		const dice = document.querySelectorAll('.dice')
+		const button = document.querySelector('button')
+		const roll = () => {
+			dice.forEach((die) => {
+				let roll = Math.floor(Math.random() * 6) + 1
+
+				switch (roll) {
+					case 1:
+						die.innerHTML = 'Bầu'
+						break
+					case 2:
+						die.innerHTML = 'Cua'
+						break
+					case 3:
+						die.innerHTML = 'Tôm'
+						break
+					case 4:
+						die.innerHTML = 'Cá'
+						break
+					case 5:
+						die.innerHTML = 'Gà'
+						break
+					case 6:
+						die.innerHTML = 'Nai'
+						break
+					default:
+						die.innerHTML = 'Hổ'
+						break
+				}
+			})
+		}
+
+		button.addEventListener('click', roll)
+		roll()
+	</script>
+</html>
