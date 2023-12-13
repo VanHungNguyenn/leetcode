@@ -1,0 +1,33 @@
+db.mycollection.insertOne({
+    name: "Tran Quoc Huy",
+    age: 25,
+    city: "Ha Noi"
+})
+
+db.mycollection.insertMany([
+{
+    name: "Nguyen Van A",
+    age: 21,
+    city: "Ho Chi Minh"
+},
+{
+    name: "Nguyen Van B",
+    age: 22,
+    city: "Da Nang"
+},
+{
+    name: "Nguyen Van C",
+    age: 23,
+    city: "Can Tho"
+},
+{
+    name: "Nguyen Van D",
+    age: 24,
+    city: "Ha Noi"
+},
+])
+
+db.mycollection.find({
+    $and: [
+    {name: "Tran Quoc Huy", age: 25},
+    ]});
