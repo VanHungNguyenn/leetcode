@@ -6,6 +6,8 @@
 const removeDuplicates = (nums) => {
 	const uniqueArray = [...new Set(nums)]
 
+	console.log(uniqueArray)
+
 	for (let i = 0; i < uniqueArray.length; i++) {
 		nums[i] = uniqueArray[i]
 	}
